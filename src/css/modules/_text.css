@@ -1,0 +1,39 @@
+.text {
+  &--small {
+    font-size: 0.9rem;
+    @mixin atSmall {
+      font-size: 1rem;
+    }
+  }
+  &--mid {
+    @mixin atVerySmall {
+      font-size: 1.3rem;
+    }
+    font-size: 1.5rem;
+    @mixin atMedium {
+      font-size: 1.7rem;
+    }
+    font-weight: 400;
+  }
+  &--normal {
+    font-size: 1.1rem;
+    @mixin atMedium {
+      font-size: 1.3rem;
+    }
+    @mixin atBig {
+      font-size: 1.5rem;
+    }
+    font-weight: 400;
+  }
+  &--semi-small {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  &--large {
+    font-size: 2rem;
+    font-weight: 400;
+    @mixin atMedium {
+      font-size: 2.5rem;
+    }
+  }
+}

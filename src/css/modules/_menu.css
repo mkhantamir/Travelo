@@ -1,0 +1,59 @@
+.menu {
+  position: absolute;
+  top: 3.5;
+  left: 50%;
+  width: 85vw;
+  background: white;
+  list-style: none;
+  padding: 0.3rem 1rem 1rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  @mixin atMedium {
+    display: none;
+  }
+  &--active {
+    color: $mainRed;
+  }
+  &--close {
+    transform: translate(-50%, -101%);
+  }
+  &__items {
+    padding: 0.3rem 0;
+  }
+  &__hamburger {
+    width: $bar-width;
+    margin: 0 0.8rem;
+    @mixin atMedium {
+      display: none;
+    }
+    &--line::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: $bar-width;
+      height: $bar-height;
+      bottom: 8px;
+      background: rgba(0, 0, 0, 1);
+      transition: all 0ms 300ms;
+    }
+    &--line {
+      width: $bar-width;
+      height: $bar-height;
+      position: relative;
+      background: rgba(0, 0, 0, 1);
+      transition: all 0ms 300ms;
+    }
+    &--line::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: $bar-width;
+      height: $bar-height;
+      top: 8px;
+      background: rgba(0, 0, 0, 1);
+      transition: all 0ms 300ms;
+    }
+  }
+}

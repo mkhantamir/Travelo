@@ -1,0 +1,21 @@
+.tag {
+  position: absolute;
+  display: flex;
+  bottom: 10%;
+  align-items: center;
+  left: 10%;
+
+  & h1 {
+    color: white;
+    margin-right: 1rem;
+    transition: all 0.2s ease-in-out;
+  }
+  & a {
+    transition: all 0.2s ease-in-out;
+    color: white;
+    font-size: 0.8em;
+    background: $mainCyan;
+    padding: 0.3rem 0.7rem;
+    border-radius: 10rem;
+  }
+}

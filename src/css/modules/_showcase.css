@@ -1,0 +1,53 @@
+.showcase {
+  height: 50vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  @mixin atMedium {
+    height: 70vh;
+  }
+  @mixin atLarge {
+    height: 80vh;
+  }
+  @mixin atBig {
+    height: 90vh;
+  }
+  &::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: url("/src/img/Indonesia-Src.jpg") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8;
+  }
+  &__header {
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 3rem;
+    @mixin atVerySmall {
+      font-size: 2.5rem;
+    }
+    @mixin atMedium {
+      font-size: 6rem;
+    }
+    z-index: 2;
+  }
+  &__paragraph {
+    font-size: 1rem;
+    font-weight: 300;
+    z-index: 2;
+    margin-bottom: 2.5rem;
+    @mixin atVerySmall {
+      font-size: 0.8rem;
+    }
+    @mixin atMedium {
+      font-size: 1.3rem;
+    }
+  }
+}
