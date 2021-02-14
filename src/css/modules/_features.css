@@ -1,0 +1,25 @@
+.features {
+  background: white;
+  &__items {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @mixin atMedium {
+      flex-direction: row;
+    }
+    i {
+      font-size: 3rem;
+      color: $mainRed;
+      margin: 1.5rem 0 1rem 0;
+    }
+  }
+  &__item {
+    h1 {
+      margin: 0.8rem 0;
+    }
+    p {
+      line-height: 1.8;
+      color: #757575;
+    }
+  }
+}

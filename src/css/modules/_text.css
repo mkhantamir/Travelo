@@ -1,6 +1,7 @@
 .text {
   &--small {
     font-size: 0.9rem;
+    color: #a8a8a8;
     @mixin atSmall {
       font-size: 1rem;
     }

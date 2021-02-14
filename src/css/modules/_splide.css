@@ -1,0 +1,14 @@
+.splide {
+  &__arrow {
+    background: $mainRed;
+  }
+  &__pagination {
+    bottom: 10%;
+    &__page {
+      background: rgb(141, 141, 141);
+      &.is-active {
+        background: $mainRed;
+      }
+    }
+  }
+}
