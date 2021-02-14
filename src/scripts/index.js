@@ -13,5 +13,5 @@ const imageController = () => {
   spliceFooter(wondersInformation);
 };
 
-menuEvent();
 imageController();
+menuEvent();
