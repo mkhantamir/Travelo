@@ -3,10 +3,14 @@
     width: 90vw;
     margin: 4rem auto 0 auto;
   }
-
+  a:hover {
+    transition: all 0.3s ease-in-out;
+    color: $mainRed;
+  }
   h1 {
     color: white;
   }
+
   &__content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
