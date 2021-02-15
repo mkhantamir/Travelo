@@ -6,9 +6,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
+  margin-top: 3.5rem;
   @mixin atMedium {
     height: 70vh;
+    margin-top: 4.5rem;
   }
   @mixin atLarge {
     height: 80vh;
